@@ -65,4 +65,11 @@ public class Calculator {
 		}
 		return leistung / (strom*strom);
 	}
+	
+	public double getRwithUandP(double spannung,double leistung) {
+		if(leistung == 0.0) {
+			throw new IllegalArgumentException();
+		}
+		return (spannung*spannung) / leistung;
+	}
 }

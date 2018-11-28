@@ -59,5 +59,10 @@ public class Calculator {
 		return spannung/strom;
 	}
 	
-	
+	public double getRwithPandI(double leistung, double strom) {
+		if (strom == 0) {
+			throw new IllegalArgumentException();
+		}
+		return leistung / (strom*strom);
+	}
 }

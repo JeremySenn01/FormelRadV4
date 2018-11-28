@@ -59,5 +59,10 @@ public class Calculator {
 		}
 		return p / i;
 	}	
-	
+	public double calculateUwithPandR(double p, double r) {
+		if (p * r < 0) {
+			throw new IllegalArgumentException();
+		}
+		return Math.sqrt(p*r);
+	}
 }

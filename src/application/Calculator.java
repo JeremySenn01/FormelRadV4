@@ -53,4 +53,11 @@ public class Calculator {
 		return r*i;
 	}
 	
+	public double calculateUwithPandI(double p, double i) {
+		if (i == 0) {
+			throw new IllegalArgumentException();
+		}
+		return p / i;
+	}	
+	
 }

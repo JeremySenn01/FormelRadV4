@@ -49,7 +49,20 @@ public class Calculator {
 		 */
 	}
 	
-	/* Hier die Methoden mit den Formlen hinzufügen
-	 */
+	public double calculateUwithRandI(double r, double i) {
+		return r*i;
+	}
 	
+	public double calculateUwithPandI(double p, double i) {
+		if (i == 0) {
+			throw new IllegalArgumentException();
+		}
+		return p / i;
+	}	
+	public double calculateUwithPandR(double p, double r) {
+		if (p * r < 0) {
+			throw new IllegalArgumentException();
+		}
+		return Math.sqrt(p*r);
+	}
 }

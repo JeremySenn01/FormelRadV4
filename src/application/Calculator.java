@@ -49,7 +49,8 @@ public class Calculator {
 		 */
 	}
 	
-	/* Hier die Methoden mit den Formlen hinzufügen
-	 */
+	public double calculateUwithRandI(double r, double i) {
+		return r*i;
+	}
 	
 }

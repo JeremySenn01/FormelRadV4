@@ -73,7 +73,7 @@ public class Calculator {
 		return (u*u)/r;
 	}
 	
-	public double calculatePwithUandI(double u, double i) {
-		return u*i;
+	public double calculatePwithRandI(double r, double i) {
+		return r*(i*i);
 	}
 }

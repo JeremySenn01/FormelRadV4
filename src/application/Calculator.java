@@ -65,4 +65,11 @@ public class Calculator {
 		}
 		return Math.sqrt(p*r);
 	}
+	
+	public double calculatePwithUandR(double u, double r) {
+		if (r== 0) {
+			throw new IllegalArgumentException();
+		}
+		return (u*u)/r;
+	}
 }

@@ -50,6 +50,7 @@ public class Calculator {
 			spannung = Math.round(calculateUwithRandI(widerstand, strom) * 100.0) / 100.0;
 
 		}
+
 		if (leistung == 0.0 && spannung != 0.0 && strom == 0.0 && widerstand != 0.0) {
 
 			leistung = Math.round(calculatePwithUandR(spannung, widerstand) * 100.0) / 100.0;
@@ -57,34 +58,7 @@ public class Calculator {
 			strom = Math.round(getIwithUandR(spannung, widerstand) * 100.0) / 100.0;
 
 		}
-		if (leistung != 0.0 && spannung == 0.0 && strom == 0.0 && widerstand != 0.0) {
 
-			spannung = Math.round(calculateUwithPandR(leistung, widerstand) * 100.0) / 100.0;
-
-			strom = Math.round(getIwithPandR(leistung, widerstand) * 100.0) / 100.0;
-
-		}
-		if (leistung == 0.0 && spannung != 0.0 && strom != 0.0 && widerstand == 0.0) {
-
-			leistung = Math.round(calculatePwithUandI(spannung, strom) * 100.0) / 100.0;
-
-			widerstand = Math.round(getRwithPandI(spannung, strom) * 100.0) / 100.0;
-
-		}
-		if (leistung != 0.0 && spannung == 0.0 && strom != 0.0 && widerstand == 0.0) {
-
-			spannung = Math.round(calculateUwithPandI(leistung, strom) * 100.0) / 100.0;
-
-			widerstand = Math.round(getRwithPandI(leistung, strom) * 100.0) / 100.0;
-
-		}
-		if (leistung != 0.0 && spannung != 0.0 && strom == 0.0 && widerstand == 0.0) {
-
-			strom = Math.round(getIwithPandU(leistung, spannung) * 100.0) / 100.0;
-
-			widerstand = Math.round(getRwithUandP(spannung, leistung) * 100.0) / 100.0;
-
-		}
 	}
 
 	public double calculateUwithRandI(double r, double i) {

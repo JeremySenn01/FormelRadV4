@@ -49,6 +49,16 @@ public class Calculator {
 		 */
 	}
 	
+	public double getRwithUandI(double spannung, double strom) {
+		if(strom == 0.0) {
+			throw new IllegalArgumentException();
+		}
+		
+		return spannung / strom ;
+		
+	}
+
+	
 	/* Hier die Methoden mit den Formlen hinzufügen
 	 */
 	

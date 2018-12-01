@@ -48,15 +48,6 @@ public class Calculator {
 		 * welche Methode unten aufgerufen werden muss.
 		 */
 	}
-	
-	public double getRwithUandI(double spannung, double strom) {
-		if(strom == 0.0) {
-			throw new IllegalArgumentException();
-		}
-		
-		return spannung / strom ;
-		
-	}
 
 	public double calculateUwithRandI(double r, double i) {
 		return r*i;
@@ -82,7 +73,33 @@ public class Calculator {
 		return (u*u)/r;
 	}
 	
+
 	public double calculatePwithRandI(double r, double i) {
 		return r*(i*i);
+
+	}
+	
+	public double getRwithPandI(double leistung, double strom) {
+		if (strom == 0) {
+			throw new IllegalArgumentException();
+		}
+		return leistung / (strom*strom);
+	}
+	
+	public double getRwithUandP(double spannung,double leistung) {
+		if(leistung == 0.0) {
+			throw new IllegalArgumentException();
+		}
+		return (spannung*spannung) / leistung;
+
+	}
+	
+	public double getRwithUandI(double spannung, double strom) {
+		if(strom == 0.0) {
+			throw new IllegalArgumentException();
+		}
+		
+		return spannung / strom ;
+		
 	}
 }

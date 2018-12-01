@@ -59,6 +59,14 @@ public class Calculator {
 
 		}
 
+		if (leistung != 0.0 && spannung == 0.0 && strom == 0.0 && widerstand != 0.0) {
+
+			spannung = Math.round(calculateUwithPandR(leistung, widerstand) * 100.0) / 100.0;
+
+			strom = Math.round(getIwithPandR(leistung, widerstand) * 100.0) / 100.0;
+
+		}
+
 	}
 
 	public double calculateUwithRandI(double r, double i) {

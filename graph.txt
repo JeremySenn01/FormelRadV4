@@ -1,0 +1,213 @@
+*   commit 79c64366e0b93be8a87b023fc217532417cb9767 (HEAD -> develop, origin/develop)
+|\  Merge: faeebcd 9a0ee63
+| | Author: Jeremy Senn <Jeremy.senn20801@gmail.com>
+| | Date:   Sat Dec 1 16:51:35 2018 +0100
+| | 
+| |     Merge branch 'featureCalculateValues' into develop
+| | 
+| * commit 9a0ee63cc49ecfc42e40a191cb8ba8d049f71da4 (origin/featureCalculateValues, featureCalculateValues)
+| | Author: Jeremy Senn <Jeremy.senn20801@gmail.com>
+| | Date:   Sat Dec 1 16:43:06 2018 +0100
+| | 
+| |     Implemented selection to call function to calculate wiederstand and strom from leistung and spannung
+| | 
+| * commit 53e3bb2d51a3c67acc6c0ef90a2440c372cf7357
+| | Author: Jeremy Senn <Jeremy.senn20801@gmail.com>
+| | Date:   Sat Dec 1 16:41:41 2018 +0100
+| | 
+| |     Implemented selection to call function to calculate spannung and wiederstand from leistung and strom
+| | 
+| * commit a560e33ee3c7008962a3a19f0a1eea2e36c2690b
+| | Author: Jeremy Senn <Jeremy.senn20801@gmail.com>
+| | Date:   Sat Dec 1 16:39:41 2018 +0100
+| | 
+| |     Implemented selection to call function to calculate leistung and wiederstand from spannung and strom
+| | 
+| * commit 3d7b91fa4c9acbdd5d3a85a3d3728c09696b3c48
+| | Author: Jeremy Senn <Jeremy.senn20801@gmail.com>
+| | Date:   Sat Dec 1 16:38:27 2018 +0100
+| | 
+| |     Implemented selection to call function to calculate spannung and strom from leistung and wiederstand
+| | 
+| * commit 9b586136351bc8f400542de22b41a8bf3a367f27
+| | Author: Jeremy Senn <Jeremy.senn20801@gmail.com>
+| | Date:   Sat Dec 1 16:36:56 2018 +0100
+| | 
+| |     Implemented selection to call function to calculate leistung and strom from wiederstand and spannung
+| | 
+| * commit ddba88f15a4098ad536e70413b5ea840771636a4
+| | Author: Jeremy Senn <Jeremy.senn20801@gmail.com>
+| | Date:   Sat Dec 1 16:35:10 2018 +0100
+| | 
+| |     Implemented selection to call function to calculate leistung and spannung from wiederstand and strom
+| | 
+* | commit faeebcd24ada7bb9acab781655b383b25eaca3a8
+|/  Author: Jeremy Senn <Jeremy.senn20801@gmail.com>
+|   Date:   Sat Dec 1 16:51:20 2018 +0100
+|   
+|       commit Calculator before merging
+|   
+*   commit 5db922ceafd33bde8235fc1ef7e40a15e9dcadf7
+|\  Merge: 5d80fe9 f78d812
+| | Author: NoelMoergeli <noel.moergeli@gmail.com>
+| | Date:   Sat Dec 1 15:55:09 2018 +0100
+| | 
+| |     Solved 2nd merge conflict
+| |   
+| *   commit f78d812650ae7bf31dad9313a19b9e32d36b4382
+| |\  Merge: 2518213 de59259
+| | | Author: Jeremy Senn <Jeremy.senn20801@gmail.com>
+| | | Date:   Sat Dec 1 13:48:12 2018 +0100
+| | | 
+| | |     Merge branch 'featureCalculateLeistung' into develop
+| | | 
+| | * commit de5925978287bbe9841346b96e0d14e7ddc5b347 (featureCalculateLeistung)
+| | | Author: Jeremy Senn <Jeremy.senn20801@gmail.com>
+| | | Date:   Sat Dec 1 13:47:22 2018 +0100
+| | | 
+| | |     changes on Main before merging
+| | | 
+| | * commit 34fe21b09cfea4187edf290b384363f11c6ed9c8 (origin/featureCalculateLeistung)
+| | | Author: Jeremy Senn <Jeremy.senn20801@gmail.com>
+| | | Date:   Sat Dec 1 13:43:03 2018 +0100
+| | | 
+| | |     Implemented last formula to calculate P with U and I (which was forgotten)
+| | |   
+* | |   commit 5d80fe9ca71b6d20b982dee3bddaad1fbae70589
+|\ \ \  Merge: a7b0246 603272e
+| | | | Author: NoelMoergeli <noel.moergeli@gmail.com>
+| | | | Date:   Sat Dec 1 14:52:43 2018 +0100
+| | | | 
+| | | |     Merge branch 'featureCalculateStromstaerke' into develop
+| | | | 
+| * | | commit 603272e12137385dae5580723b0f384231397df0
+| | | | Author: NoelMoergeli <noel.moergeli@gmail.com>
+| | | | Date:   Sat Dec 1 14:51:24 2018 +0100
+| | | | 
+| | | |     Implemented formula to calculate I with P and R
+| | | | 
+| * | | commit b58c747b664a9239a36adbecf00b9d5a61294918
+| | | | Author: NoelMoergeli <noel.moergeli@gmail.com>
+| | | | Date:   Sat Dec 1 14:50:15 2018 +0100
+| | | | 
+| | | |     Implemented formula to calculate I with P and U
+| | | | 
+| * | | commit 4eef5aa06edbf585dd515989ff0f90e1ac4d233c
+|/ / /  Author: NoelMoergeli <noel.moergeli@gmail.com>
+| | |   Date:   Sat Dec 1 14:48:02 2018 +0100
+| | |   
+| | |       Implemented formula to calculate I with U and R
+| | |   
+* | |   commit a7b024632c4ac9be041bd48453e53b66ad4ad7bf
+|\ \ \  Merge: f6d68eb dd9dbdb
+| | | | Author: NoelMoergeli <noel.moergeli@gmail.com>
+| | | | Date:   Sat Dec 1 14:27:01 2018 +0100
+| | | | 
+| | | |     Merge conflict solved
+| | | | 
+| * | | commit dd9dbdbe65fc8efa95e84fe4f43e1c6586662424 (origin/featureCalculateWiderstand)
+| | | | Author: NoelMoergeli <noel.moergeli@gmail.com>
+| | | | Date:   Wed Nov 28 16:57:38 2018 +0100
+| | | | 
+| | | |     Implemented formula to calculate R with U and P
+| | | | 
+| * | | commit d573e3acc51afb95d8579002d8dfb5bfee1bd824
+| | | | Author: NoelMoergeli <noel.moergeli@gmail.com>
+| | | | Date:   Wed Nov 28 16:56:11 2018 +0100
+| | | | 
+| | | |     Implemented formula to calculate R with P and I
+| | | | 
+| * | | commit 94b97d68088dbd71902c95194c5c5cecacd2bf3c
+| | | | Author: NoelMoergeli <noel.moergeli@gmail.com>
+| | | | Date:   Wed Nov 28 16:51:17 2018 +0100
+| | | | 
+| | | |     Implementet formula to calculate R with U and I
+| | | |   
+* | | |   commit f6d68ebd4eac61c61eed8d35e2ae107f2c8fe15d
+|\ \ \ \  Merge: 257a928 2518213
+| | |/ /  Author: NoelMoergeli <noel.moergeli@gmail.com>
+| |/| |   Date:   Sat Dec 1 14:14:08 2018 +0100
+| | | |   
+| | | |       Merge branch 'develop' of https://github.com/JeremySenn01/FormelRadV4 into featureCalculateWiderstand
+| | | |       
+| | | |       rrrin/
+| | | |   
+| * | |   commit 2518213cff37306f4c8ff107e756c017ca0ab7ec
+| |\ \ \  Merge: 8b2e803 f74ee2c
+| | | |/  Author: Jeremy Senn <Jeremy.senn20801@gmail.com>
+| | |/|   Date:   Thu Nov 29 19:25:58 2018 +0100
+| | | |   
+| | | |       Merge branch 'featureCalculateLeistung' into develop
+| | | | 
+| | * | commit f74ee2c5b124213136af2534e31975dbad2bea43
+| | | | Author: Jeremy Senn <Jeremy.senn20801@gmail.com>
+| | | | Date:   Thu Nov 29 19:21:06 2018 +0100
+| | | | 
+| | | |     Implemented Formula to calculate P with R and I
+| | | | 
+| | * | commit 96181d96b562fa6dcabde6ed159ebc778c962ffe
+| | | | Author: Jeremy Senn <Jeremy.senn20801@gmail.com>
+| | | | Date:   Thu Nov 29 19:18:21 2018 +0100
+| | | | 
+| | | |     Implemented Formula to calculate P with U and I
+| | | | 
+| | * | commit cc7b8ac4b4fc0aec7325f5027cdc5e0861692f29
+| | | | Author: Jeremy Senn <Jeremy.senn20801@gmail.com>
+| | | | Date:   Thu Nov 29 19:16:46 2018 +0100
+| | | | 
+| | | |     Implemented Formula to calculate P with U and R
+| | | | 
+| * | | commit 8b2e80355b5eb5137e3c1320fce7b245a91647fe
+| |/ /  Author: Jeremy Senn <Jeremy.senn20801@gmail.com>
+| | |   Date:   Thu Nov 29 19:25:42 2018 +0100
+| | |   
+| | |       Commit changes to prevent them from being overwritten
+| | |   
+| * |   commit eaaf2770237e9e7e3e2d0621342a4a0cf7760fcd
+| |\ \  Merge: cf4ddb8 587cfbc
+| | |/  Author: jeremy.senn01 <jeremy.senn@axa-winterthur.ch>
+| |/|   Date:   Wed Nov 28 16:47:49 2018 +0100
+| | |   
+| | |       Merge branch 'featureCalculateSpannung' into develop
+| | | 
+| | * commit 587cfbcf96ede27a05b99b2a6a15cccf0d31788a (origin/featureCalculateSpannung)
+| | | Author: jeremy.senn01 <jeremy.senn@axa-winterthur.ch>
+| | | Date:   Wed Nov 28 16:47:02 2018 +0100
+| | | 
+| | |     Implemented formula to calculate U with P and R
+| | | 
+| | * commit 9cf82a55dd614007106dcde8e713ab4b28de5d77
+| | | Author: jeremy.senn01 <jeremy.senn@axa-winterthur.ch>
+| | | Date:   Wed Nov 28 16:41:03 2018 +0100
+| | | 
+| | |     Implemented Formula to calculate U with P and I
+| | | 
+| | * commit 97a8cc273e35271dd03c59d616dbf49e9eea5e60
+| |/  Author: jeremy.senn01 <jeremy.senn@axa-winterthur.ch>
+| |   Date:   Wed Nov 28 16:35:00 2018 +0100
+| |   
+| |       Implemented Formula to calculate U with R and I
+| | 
+* | commit 257a92818488bb691b938d5b7f79d1fc14f91e2e
+|/  Author: NoelMoergeli <noel.moergeli@gmail.com>
+|   Date:   Sat Dec 1 13:58:36 2018 +0100
+|   
+|       Implemented formula to calculate R with U and I
+| 
+* commit cf4ddb8fb04f46b904cfcb5e1628f46ea40543f7 (origin/baseProject)
+| Author: JeremySenn01 <jeremy.senn20801@gmail.com>
+| Date:   Mon Nov 26 08:44:55 2018 +0100
+| 
+|     created .gitignore
+| 
+* commit 6ecde9e16ccaebec8952c6854986474226775490
+| Author: JeremySenn01 <jeremy.senn20801@gmail.com>
+| Date:   Mon Nov 26 08:42:06 2018 +0100
+| 
+|     start project
+| 
+* commit 7cf375698123a7a25a9022e2eaf636b3713ab81e (origin/master, origin/HEAD, master)
+  Author: JeremySenn01 <43532004+JeremySenn01@users.noreply.github.com>
+  Date:   Mon Nov 26 08:10:08 2018 +0100
+  
+      Initial commit

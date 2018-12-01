@@ -102,4 +102,27 @@ public class Calculator {
 		return spannung / strom ;
 		
 	}
+	public double getIwithUandR(double spannung, double wiederstand) {
+		if(wiederstand == 0) {
+			throw new IllegalArgumentException();
+		}
+		
+		return spannung/wiederstand;
+		
+	}
+	public double getIwithPandU(double leistung, double spannung) {
+		if(spannung == 0) {
+			throw new IllegalArgumentException();
+		}
+		return leistung/spannung;
+	}
+	public double getIwithPandR(double leistung,double wiederstand) {
+		if(wiederstand == 0) {
+			throw new IllegalArgumentException();
+		}
+		
+		return Math.sqrt(leistung/wiederstand);
+	}
+	
+	
 }

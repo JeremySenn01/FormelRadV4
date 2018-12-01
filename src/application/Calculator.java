@@ -110,6 +110,12 @@ public class Calculator {
 		return spannung/wiederstand;
 		
 	}
+	public double getIwithPandU(double leistung, double spannung) {
+		if(spannung == 0) {
+			throw new IllegalArgumentException();
+		}
+		return leistung/spannung;
+	}
 	
 	
 }

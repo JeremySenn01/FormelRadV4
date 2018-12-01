@@ -124,5 +124,7 @@ public class Calculator {
 		return Math.sqrt(leistung/wiederstand);
 	}
 	
-	
+	public double calculatePwithUandI(double u, double i) {
+		return u*i;
+	}
 }

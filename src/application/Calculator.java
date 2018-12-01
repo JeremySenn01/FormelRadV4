@@ -58,8 +58,31 @@ public class Calculator {
 		
 	}
 
+	public double calculateUwithRandI(double r, double i) {
+		return r*i;
+	}
 	
-	/* Hier die Methoden mit den Formlen hinzufügen
-	 */
+	public double calculateUwithPandI(double p, double i) {
+		if (i == 0) {
+			throw new IllegalArgumentException();
+		}
+		return p / i;
+	}	
+	public double calculateUwithPandR(double p, double r) {
+		if (p * r < 0) {
+			throw new IllegalArgumentException();
+		}
+		return Math.sqrt(p*r);
+	}
+
+	public double calculatePwithUandR(double u, double r) {
+		if (r== 0) {
+			throw new IllegalArgumentException();
+		}
+		return (u*u)/r;
+	}
 	
+	public double calculatePwithRandI(double r, double i) {
+		return r*(i*i);
+	}
 }

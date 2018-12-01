@@ -102,4 +102,14 @@ public class Calculator {
 		return spannung / strom ;
 		
 	}
+	public double getIwithUandR(double spannung, double wiederstand) {
+		if(wiederstand == 0) {
+			throw new IllegalArgumentException();
+		}
+		
+		return spannung/wiederstand;
+		
+	}
+	
+	
 }

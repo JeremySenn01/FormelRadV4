@@ -82,6 +82,14 @@ public class Calculator {
 			widerstand = Math.round(getRwithPandI(leistung, strom) * 100.0) / 100.0;
 
 		}
+
+		if (leistung != 0.0 && spannung != 0.0 && strom == 0.0 && widerstand == 0.0) {
+
+			strom = Math.round(getIwithPandU(leistung, spannung) * 100.0) / 100.0;
+
+			widerstand = Math.round(getRwithUandP(spannung, leistung) * 100.0) / 100.0;
+
+		}
 	}
 
 	public double calculateUwithRandI(double r, double i) {

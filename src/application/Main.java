@@ -1,5 +1,9 @@
 package application;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -9,6 +13,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 /**
@@ -21,7 +26,8 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			Pane root = new Pane();
-
+			List<TextField> inputs = new ArrayList<>();
+			
 			// Creating an image
 			Image image = new Image(getClass().getResourceAsStream("formelradelektronik.gif"));	
 			ImageView imageView = new ImageView(image);
@@ -77,7 +83,16 @@ public class Main extends Application {
 			btnBerechnen.setText("Berechnen");
 			root.getChildren().add(btnBerechnen);
 			
+			Text tError = new Text();
+			tError.relocate(200, 445);
+			root.getChildren().add(tError);
+			
+			inputs.addAll(Arrays.asList(txLeistung, txSpannung, txStrom, txWiderstand));
+			
 			btnBerechnen.setOnAction(e -> {
+				
+			
+				
 				double power = 0.0;
 				double tension = 0.0;
 				double current = 0.0;

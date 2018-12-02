@@ -84,12 +84,25 @@ public class Main extends Application {
 			btnBerechnen.setText("Berechnen");
 			root.getChildren().add(btnBerechnen);
 
+			Button btnClear = new Button();
+			btnClear.relocate(10, 445);
+			btnClear.setText("leeren");
+			root.getChildren().add(btnClear);
+
 			Text tError = new Text();
 			tError.relocate(200, 445);
 			root.getChildren().add(tError);
 
 			inputs.addAll(Arrays.asList(txLeistung, txSpannung, txStrom, txWiderstand));
 
+//			btnClear.setOnAction(e -> {
+//				
+//				for (TextField tf : inputs) {
+//					
+//				}
+//				
+//			});
+			
 			btnBerechnen.setOnAction(e -> {
 
 				for (TextField tf : inputs) {

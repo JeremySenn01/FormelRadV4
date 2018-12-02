@@ -1,5 +1,9 @@
 package application;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -9,10 +13,12 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 /**
  * Formelrad Application
+ * 
  * @author Peter Rutschmann
  * @version 22.10.2018
  */
@@ -21,9 +27,10 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			Pane root = new Pane();
+			List<TextField> inputs = new ArrayList<>();
 
 			// Creating an image
-			Image image = new Image(getClass().getResourceAsStream("formelradelektronik.gif"));	
+			Image image = new Image(getClass().getResourceAsStream("formelradelektronik.gif"));
 			ImageView imageView = new ImageView(image);
 			imageView.setX(10);
 			imageView.setY(10);
@@ -76,32 +83,54 @@ public class Main extends Application {
 			btnBerechnen.relocate(100, 445);
 			btnBerechnen.setText("Berechnen");
 			root.getChildren().add(btnBerechnen);
-			
+
+			Text tError = new Text();
+			tError.relocate(200, 445);
+			root.getChildren().add(tError);
+
+			inputs.addAll(Arrays.asList(txLeistung, txSpannung, txStrom, txWiderstand));
+
 			btnBerechnen.setOnAction(e -> {
+
+				for (TextField tf : inputs) {
+					tf.setStyle("-fx-text-fill: black;");
+				}
+
+				tError.setText("");
+				int countEmptyFields = 0;
+				for (TextField tf : inputs) {
+					if (tf.getText().isEmpty()) {
+						countEmptyFields++;
+						tf.setStyle("-fx-text-fill: red;");
+					}
+				}
+				if (countEmptyFields <= 1) {
+					tError.setText("Too many inputs");
+				}
+
 				double power = 0.0;
 				double tension = 0.0;
 				double current = 0.0;
 				double resistence = 0.0;
-				if(txLeistung.getText().isEmpty()==false) {
+				if (txLeistung.getText().isEmpty() == false) {
 					power = Double.parseDouble(txLeistung.getText());
 				}
-				if(txSpannung.getText().isEmpty()==false) {
+				if (txSpannung.getText().isEmpty() == false) {
 					tension = Double.parseDouble(txSpannung.getText());
 				}
-				if(txStrom.getText().isEmpty()==false) {
+				if (txStrom.getText().isEmpty() == false) {
 					current = Double.parseDouble(txStrom.getText());
 				}
-				if(txWiderstand.getText().isEmpty()==false) {
+				if (txWiderstand.getText().isEmpty() == false) {
 					resistence = Double.parseDouble(txWiderstand.getText());
 				}
-				Calculator myCalculator = new Calculator(
-						power, tension, current, resistence);
+				Calculator myCalculator = new Calculator(power, tension, current, resistence);
 				System.out.print("Vorher:  ");
 				System.out.println(myCalculator.toString());
 				myCalculator.calculate();
 				System.out.print("Nachher: ");
 				System.out.println(myCalculator.toString());
-					
+
 				txLeistung.setText(Double.toString(myCalculator.getLeistung()));
 				txSpannung.setText(Double.toString(myCalculator.getSpannung()));
 				txStrom.setText(Double.toString(myCalculator.getStrom()));

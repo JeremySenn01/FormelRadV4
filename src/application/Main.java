@@ -95,13 +95,14 @@ public class Main extends Application {
 
 			inputs.addAll(Arrays.asList(txLeistung, txSpannung, txStrom, txWiderstand));
 
-//			btnClear.setOnAction(e -> {
-//				
-//				for (TextField tf : inputs) {
-//					
-//				}
-//				
-//			});
+			btnClear.setOnAction(e -> {
+				
+				for (TextField tf : inputs) {
+					tf.setStyle("-fx-text-fill: black;");
+					tf.setText("");
+				}
+				
+			});
 			
 			btnBerechnen.setOnAction(e -> {
 

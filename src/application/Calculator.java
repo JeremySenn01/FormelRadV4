@@ -58,6 +58,8 @@ public class Calculator {
 			leistung = Math.round(calculatePwithUandR(spannung, widerstand) * 100.0) / 100.0;
 
 			strom = Math.round(getIwithUandR(spannung, widerstand) * 100.0) / 100.0;
+			
+			System.out.println("leistung : " + leistung + "\nstrom: " + strom);
 
 		}
 

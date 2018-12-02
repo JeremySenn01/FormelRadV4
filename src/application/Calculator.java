@@ -48,6 +48,8 @@ public class Calculator {
 			leistung = Math.round(calculatePwithRandI(widerstand, strom) * 100.0) / 100.0;
 
 			spannung = Math.round(calculateUwithRandI(widerstand, strom) * 100.0) / 100.0;
+			
+			System.out.println("leistung : " + leistung + "\nSpannung: " + spannung);
 
 		}
 
@@ -56,6 +58,8 @@ public class Calculator {
 			leistung = Math.round(calculatePwithUandR(spannung, widerstand) * 100.0) / 100.0;
 
 			strom = Math.round(getIwithUandR(spannung, widerstand) * 100.0) / 100.0;
+			
+			System.out.println("leistung : " + leistung + "\nstrom: " + strom);
 
 		}
 
@@ -64,6 +68,8 @@ public class Calculator {
 			spannung = Math.round(calculateUwithPandR(leistung, widerstand) * 100.0) / 100.0;
 
 			strom = Math.round(getIwithPandR(leistung, widerstand) * 100.0) / 100.0;
+			
+			System.out.println("spannung : " + spannung + "\nstrom: " + strom);
 
 		}
 
@@ -73,6 +79,8 @@ public class Calculator {
 
 			widerstand = Math.round(getRwithPandI(spannung, strom) * 100.0) / 100.0;
 
+			System.out.println("leistung : " + leistung + "\nwiderstand: " + widerstand);
+			
 		}
 
 		if (leistung != 0.0 && spannung == 0.0 && strom != 0.0 && widerstand == 0.0) {
@@ -81,6 +89,8 @@ public class Calculator {
 
 			widerstand = Math.round(getRwithPandI(leistung, strom) * 100.0) / 100.0;
 
+			System.out.println("spannung : " + spannung + "\nwiderstand: " + widerstand);
+
 		}
 
 		if (leistung != 0.0 && spannung != 0.0 && strom == 0.0 && widerstand == 0.0) {
@@ -88,6 +98,8 @@ public class Calculator {
 			strom = Math.round(getIwithPandU(leistung, spannung) * 100.0) / 100.0;
 
 			widerstand = Math.round(getRwithUandP(spannung, leistung) * 100.0) / 100.0;
+
+			System.out.println("strom : " + strom + "\nwiderstand: " + widerstand);
 
 		}
 	}

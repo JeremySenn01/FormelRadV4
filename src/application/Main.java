@@ -91,7 +91,16 @@ public class Main extends Application {
 			
 			btnBerechnen.setOnAction(e -> {
 				
-			
+				tError.setText("");
+				int countEmptyFields = 0;
+				for (TextField tf : inputs) {
+					if (tf.getText().isEmpty()) {
+						countEmptyFields++;
+					}
+				}
+				if (countEmptyFields <= 1) {
+					tError.setText("Too many inputs");
+				}
 				
 				double power = 0.0;
 				double tension = 0.0;

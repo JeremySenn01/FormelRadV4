@@ -101,6 +101,7 @@ public class Main extends Application {
 				for (TextField tf : inputs) {
 					if (tf.getText().isEmpty()) {
 						countEmptyFields++;
+						tf.setStyle("-fx-text-fill: red;");
 					}
 				}
 				if (countEmptyFields <= 1) {
